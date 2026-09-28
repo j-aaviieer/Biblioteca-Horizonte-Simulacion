@@ -5,177 +5,230 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: arial;
+    flex-wrap: wrap;
+    
 }
-.nav-bar {
+
+nav {
+    background-color: rgb(247, 247, 247);
+    border: 4px rgb(222, 222, 222) solid;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 15px 30px;
-    border-bottom: solid 2px rgba(0, 0, 0, 0.219);
+    align-items: center;
+    padding: 0px 15px;
+    flex-wrap: wrap;
 }
+
 .logo {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    width: 300px;
+    gap: 15px;
+}
+.logo img {
     width: 80px;
 }
-.title-container h1{
-    font-size: 2rem;
+.logo h1 {
+    font-size: 1.7rem;
 }
-.title-container span{
-    color: rgb(42 94 165);
-    font-size: 2.5rem;
-}
-.title-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    width: 300px;
-}
-.nav-bar-actions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-.login-container {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
-.email {
-    padding: 0px 10px;
-    height: 50px;
-    width: 250px;
-    font-size: 1.1rem;
-    border: solid 2px black;
-    border-radius: 5px;
-}
-.login-button {
-    background-color: rgb(42 94 165);
-    color: white;
-    border: 0px;
-    height: 50px;
-    width: 120px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.books-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-}
-.books {
-    width: 75px;
+.logo span {
+    font-size: 2.2rem;
+    color: rgb(36, 93, 163);
 }
 
-
-.section-arriba {
-    padding: 0px 50px;
-}
-
-.type-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: rgb(254, 232, 198);
-}
-
-.tarjeta-type {
-    display: flex;
+.Nav_Text{
+    display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
 }
 
-.food-image {
-    height: 150px;
-    width: 150px;
-}
-
-.section-abajo {
+.Nav_Extras {
     display: flex;
-    flex-direction: row;
-    padding: 0px 50px;
-    margin-top: 20px;
-    gap: 20px;
-    margin-bottom: 50px;
-}
-.section-left {
-    display: flex;
-    flex-direction: row;
-    padding: 30px 20px;
-    height: 495px;
-    width: 900px;
-    background-color: rgb(197, 197, 197);
-}
-.section-left-image {
-   width: 600px; 
-   height: 440px;
-}
-
-.section-left-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    gap: 50px;
     padding: 20px;
 }
-.mexicana {
-    font-weight: bolder;
-}
-.servicio {
-    color: black;
-    text-decoration: underline;
-}
-.domicilio {
-    color: rgb(255, 100, 1);
-}
-.section-left-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: normal;
-}
-.section-left-subtitle {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: normal;
+
+.Nav_Form {
+    display: flex;
+    height:40px;
+    gap:5px;
 }
 
+.Nav_Form button {
+    background-color: rgb(40, 94, 165);
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius:5px;
+}
 
+.Nav_Libros {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
 
+.Nav_Libros img{
+    width:40px;
+    height:40px;
+}
 
-.section-right {
+.Nav_Libros_Text{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+.Nav_Libros_Text h1{
+    font-size:18px;
+}
+.Nav_Libros_Text p{
+    font-size:18px;
+    padding-top:20px;
+}
+.Main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Categorias {
+    background-color: rgb(209, 220, 232);
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.Categoria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 25px;
+    width:140px;
+    margin-bottom:5px;
+    flex-wrap: wrap;
+    background-color:rgb(255, 255, 255);
+}
+
+.Categoria img {
+    width: 60px;
+    height: 48px;
+    margin-top:20px;
+}
+
+.Seccion2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:20px;
+    padding:20px;
+    flex-wrap: wrap;
+}
+
+.Anuncio{
+    width:725px;
+    height:405px;
+    background-color:rgb(197, 197, 197);
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align:center;
+    padding:10px;
+    gap:10px;
+}
+
+.Anuncio_Texto{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    max-width:255px;
+    font-size:32px;
+    font-weight: lighter;
+    gap:20px;
+    text-align: start;
+}
+.Raya{
+    border:3px solid rgb(39, 94, 160);
+    width:80px;
+}
+.Anuncio img{
+    width:440px;
+    height:340px;
+}
+
+.Recomendaciones{
+    width:400px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+    padding:20px;
 }
-.tarjeta {
-    border: 2px solid rgba(0, 0, 0, 0.151);
-}
-.section-right-image {
-    height: 150px;
-    width: 275px;
-}
-.orders {
-    display: flex;
+
+.Recomendacion{
+    display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    text-align: start;
+    border:1px solid gray;
+    height:125px;
 }
-.order-button {
-    background-color: rgb(255, 100, 1);
-    color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 0px;
-    cursor: pointer;
+
+.Recomendacion img{
+    width:100px;
+    height:130px;
+    padding:20px;
+}
+
+.Subrayado{
+    text-decoration: underline;
+}
+
+.Recomendacion_Info{
+    display:flex;
+    flex-direction: column;
+    max-width:350px;
+    width:350px;
+    padding:25px;
+    position: relative;
+    gap:15px;
+
+}
+
+.Desc{
+    color:rgb(66, 66, 66);
+    font-size:16px;
+}
+.Recomendacion_Info a{
+    max-width:80px;
+}
+.Pedir{
+    position:absolute;
+    top:75px;
+    left:210px;
+}
+.Pedir button{
+        background-color:rgb(24, 55, 84);
+    color:white;
+    border:none;
+    border-radius:50%;
+    height:40px;
+    width:40px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.Pedir button:hover{
+    background-color:rgb(187, 76, 2);
+
+}
+.Negrita{
+    font-weight:bold;
 }

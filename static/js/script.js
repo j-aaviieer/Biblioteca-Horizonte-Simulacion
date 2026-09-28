@@ -1,35 +1,38 @@
-var counter = 0;
+let Carro = document.querySelector("#Carro");
+let Carro_Counter = document.querySelector("#Carrito");
+let Carro2 = document.querySelector("#Carro2");
+let Carro3 = document.querySelector("#Carro3");
+let Carro_Compras = 0;
 
-var booksCounterNumber = document.getElementById("booksCounter");
-var orderButtonCount = document.getElementById("orderButton");
-
-orderButtonCount.onclick = function () {
-    counter = counter + 1;
-    booksCounterNumber.innerText = counter;
-};
-var booksCounterNumber = document.getElementById("booksCounter");
-var orderButtonCount = document.getElementById("orderButton2");
-
-orderButtonCount.onclick = function () {
-    counter = counter + 1;
-    booksCounterNumber.innerText = counter;
-};
-
-
-const tarjeta = document.getElementById("imageContainer");
-
-const imagenTarjeta = document.querySelector(".section-left-image");
-tarjeta.addEventListener("mouseover", function () {
-   imagenTarjeta.src = "static/images/comida-mexicana2.jpg";
+Carro.addEventListener("click", function () {
+    Carro_Compras++;
+    Carro_Counter.innerText = `${Carro_Compras}`;
 });
-tarjeta.addEventListener("mouseout", function () {
-   imagenTarjeta.src = "static/images/comida-mexicana.jpg";
+Carro2.addEventListener("click", function () {
+    Carro_Compras++;
+    Carro_Counter.innerText = `${Carro_Compras}`;
+});
+Carro3.addEventListener("click", function () {
+    Carro_Compras++;
+    Carro_Counter.innerText = `${Carro_Compras}`;
 });
 
+const imagen = document.getElementById("Imagen");
+const imagenNueva = "static/images/biblioteca.png";
+const imagenOg = "static/images/biblioteca2.png";
+
+imagen.addEventListener("mouseover", function () {
+    this.src = imagenNueva;
+});
+
+imagen.addEventListener("mouseout", function () {
+    this.src = imagenOg;
+});
 
 
-const loginButton = document.getElementById('loginButton');
-loginButton.addEventListener('click', () => {
-    const loginInput = document.getElementById('login').value;
-    alert(`Bienvenid@ ${loginInput}`)
+const input = document.getElementById("input");
+const boton = document.querySelector("#boton");
+boton.addEventListener("click", function () {
+    let email = input.value;
+    alert(`Bienvenido ${email}`)
 });

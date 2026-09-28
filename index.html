@@ -1,110 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Javier Colque">
-    <title>Taco Palace</title>
+    <title>Biblioteca Horizonte</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="title-container">
-                <img src="static/images/logo.png" alt="logo" class="logo" />
+    <header> <!--Es el contenedor de la barra de navegacion-->
+        <nav> <!--Barra de navegacion-->
+            <div class="logo"> 
+                <img src="static/images/logo.png" alt="Logo">
                 <h1>Biblioteca <span>Horizonte</span></h1>
             </div>
-            <div class="nav-bar-actions">
-                <div class="login-container" id="loginContainer">
-                    <input type="email" placeholder="Email" required class="email" id="login"/>
-                    <button type="button" class="login-button" id="loginButton">Ingresar</button>
+            <div class="Nav_Extras">
+                <div class="Nav_Form">
+                    <input id="input" type="email" name="email" placeholder="Email">
+                    <button id="boton" type="submit">Ingresar</button>
                 </div>
-                <div class="books-container">
-                    <img src="static/images/books.png" alt="books" class="books" />
-                    <p>Libros<br> seleccionados:</p>
-                    <p id="booksCounter">0</p>
+                <div class="Nav_Libros">
+                    <img src="static/images/books.png" alt="Logo-Libros">
+                    <div class="Nav_Libros_Text">
+                        <h1>Libros <br>seleccionados:</h1>
+                        <p id="Carrito">0</p>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-<!------------------------------------------------------------------------------------------->
-    <main>
-        <div class="section-arriba">
-            <div class="type-container">
-                <div class="tarjeta-type">
-                    <img src="static/images/logo.png" alt="novelas" class="novelas"/>
-                    <p>Novelas</p>
-                </div>
-                <div class="tarjeta-type">
-                    <img src="static/images/botella.png" alt="ciencia" class="ciencia"/>
-                    <p>Ciencia</p>
-                </div>
-                <div class="tarjeta-type">
-                    <img src="static/images/ayuntamiento.png" alt="ayuntamiento" class="ayuntamiento"/>
-                    <p>Historia</p>
-                </div>
-                <div class="tarjeta-type">
-                    <img src="static/images/pintura.png" alt="pintura" class="pintura"/>
-                    <p>Pintura</p>
-                </div>
-                <div class="tarjeta-type">
-                    <img src="static/images/laptop.png" alt="tecnologia" class="tecnologia"/>
-                    <p>Tecnología</p>
-                </div>
-                <div class="tarjeta-type">
-                    <img src="static/images/peluche.png" alt="peluche" class="peluche"/>
-                    <p>Infantil</p>
-                </div>
+    <main class="Main">
+        <div class="Categorias">
+            <div class="Categoria">
+                <img src="static/images/logo.png" alt="Novelas">
+                <p>Novelas</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/botella.png" alt="Ciencia">
+                <p>Ciencia</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/ayuntamiento.png" alt="Historia">
+                <p>Historia</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/laptop.png" alt="Tecnologia">
+                <p>Tecnología</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/pintura.png" alt="Arte">
+                <p>Arte</p>
+            </div>
+            <div class="Categoria">
+                <img src="static/images/peluche.png" alt="Infantil">
+                <p>Infantil</p>
             </div>
         </div>
-<!-------------------------------------------------------------------------------------------->
-        <div class="section-abajo">
-            <div class="section-left">
-                <div class="section-left-text">
-                    <div>
-                        <h2 class="section-left-title">La mejor variedad en platillos de comida <span class="mexicana">mexicana</span></h2>
-                    </div>
-                    <div>
-                        <h3 class="section-left-subtitle">Contamos con <a href="#"><span class="servicio">servicio</span></a> a <span class="domicilio">domicilio</span></h3>
-                    </div>
+        <div class="Seccion2">
+            <div class="Anuncio">
+                <div class="Anuncio_Texto">
+                    <p class="Negrita">Descubre nuevas historias</p>
+                    <div class="Raya"></div>
+                    <p class="Desc">Explora nuestra biblioteca virtual y encuentra libros para todos los gustos.
+                        Conocimiento, aventura y mucho más al alcance de un clic.</p>
                 </div>
-                <div id="imageContainer">
-                    <img src="static/images/comida-mexicana.jpg" alt="section-left-image" class="section-left-image"/>
+                <div class="Anuncio_Imagen">
+                    <img id="Imagen" src="static/images/biblioteca.png" id="Biblioteca" alt="Biblioteca">
                 </div>
             </div>
-<!-------------------------------------------------------------------------------------------->
-            <section class="section-right">
-                <h2>Recomendados:</h2>
-                <div class="tarjeta">
-                    <img src="static/images/orden-tacos.jpg" alt="orden-tacos" class="section-right-image"/>
-                    <div class="orders">
-                        <div>
-                            <p>Orden de Tacos</p>
-                            <a href="#">Ver Más...</a>
-                        </div>
-                        <div>
-                            <button class="order-button" id="orderButton">+</button>
+            <div class="Recomendaciones">
+                <h1>Libros recomendados:</h1>
+                <div class="Recomendacion">
+                    <img src="static/images/Libro1.png" alt="Libro1">
+                    <div class="Recomendacion_Info">
+                        <p>Cien años de soledad</p>
+                        <p class="Desc">Gabriel García Márquez</p>
+                        <a href="#">Ver mas...</a>
+                        <div class="Pedir">
+                            <button id="Carro">+</button>
                         </div>
                     </div>
                 </div>
-                <div class="tarjeta">
-                    <img src="static/images/orden-flautas.jpg" alt="orden-flautas" class="section-right-image"/>
-                    <div class="orders">
-                        <div>
-                            <p>Orden de Flautas</p>
-                            <a href="#">Ver Más...</a>
-                        </div>
-                        <div>
-                            <button class="order-button" id="orderButton2">+</button>
+                <div class="Recomendacion">
+                    <img src="static/images/Libro2.png" alt="Libro2">
+                    <div class="Recomendacion_Info">
+                        <p>Sapiens</p>
+                        <p class="Desc">Yuval Noah Harari</p>
+                        <a href="#">Ver mas...</a>
+                        <div class="Pedir">
+                            <button id="Carro2">+</button>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="Recomendacion">
+                    <img src="static/images/Libro3.png" alt="Libro3">
+                    <div class="Recomendacion_Info">
+                        <p>El principito</p>
+                        <p class="Desc">Antoine de Saint-Exupéry</p>
+                        <a href="#">Ver mas...</a>
+                        <div class="Pedir">
+                            <button id="Carro3">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+    <footer>
+
+    </footer>
+
     <script src="static/js/script.js"></script>
 </body>
 

@@ -10,18 +10,18 @@
 <body>
     <header> <!--Es el contenedor de la barra de navegacion-->
         <nav> <!--Barra de navegacion-->
-            <div class="logo"> 
+            <div class="logo"> <!--Contenedor del Logo-->
                 <img src="static/images/logo.png" alt="Logo">
                 <h1>Biblioteca <span>Horizonte</span></h1>
             </div>
-            <div class="Nav_Extras">
-                <div class="Nav_Form">
+            <div class="nav-interactions"> <!--Interacciones del Nav-->
+                <div class="nav-email">
                     <input id="input" type="email" name="email" placeholder="Email">
                     <button id="boton" type="submit">Ingresar</button>
                 </div>
-                <div class="Nav_Libros">
+                <div class="nav-books">
                     <img src="static/images/books.png" alt="Logo-Libros">
-                    <div class="Nav_Libros_Text">
+                    <div class="books-count">
                         <h1>Libros <br>seleccionados:</h1>
                         <p id="Carrito">0</p>
                     </div>
@@ -29,30 +29,30 @@
             </div>
         </nav>
     </header>
-    <main class="Main">
-        <div class="Categorias">
-            <div class="Categoria">
-                <img src="static/images/logo.png" alt="Novelas">
+    <main>
+        <div class="categories-container"> <!--Contenedor que abarcara las categorias-->
+            <div class="categoria"> 
+                <img src="static/images/logo.png" alt="novelas">
                 <p>Novelas</p>
             </div>
-            <div class="Categoria">
-                <img src="static/images/botella.png" alt="Ciencia">
+            <div class="categoria">
+                <img src="static/images/botella.png" alt="ciencia">
                 <p>Ciencia</p>
             </div>
-            <div class="Categoria">
-                <img src="static/images/ayuntamiento.png" alt="Historia">
+            <div class="categoria">
+                <img src="static/images/ayuntamiento.png" alt="historia">
                 <p>Historia</p>
             </div>
-            <div class="Categoria">
-                <img src="static/images/laptop.png" alt="Tecnologia">
+            <div class="categoria">
+                <img src="static/images/laptop.png" alt="tecnologia">
                 <p>Tecnología</p>
             </div>
-            <div class="Categoria">
-                <img src="static/images/pintura.png" alt="Arte">
+            <div class="categoria">
+                <img src="static/images/pintura.png" alt="arte">
                 <p>Arte</p>
             </div>
-            <div class="Categoria">
-                <img src="static/images/peluche.png" alt="Infantil">
+            <div class="categoria">
+                <img src="static/images/peluche.png" alt="infantil">
                 <p>Infantil</p>
             </div>
         </div>
@@ -71,7 +71,7 @@
             <div class="Recomendaciones">
                 <h1>Libros recomendados:</h1>
                 <div class="Recomendacion">
-                    <img src="static/images/Libro1.png" alt="Libro1">
+                    <img src="static/images/soledad.png" alt="Libro1">
                     <div class="Recomendacion_Info">
                         <p>Cien años de soledad</p>
                         <p class="Desc">Gabriel García Márquez</p>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="Recomendacion">
-                    <img src="static/images/Libro2.png" alt="Libro2">
+                    <img src="static/images/sapiens.png" alt="Libro2">
                     <div class="Recomendacion_Info">
                         <p>Sapiens</p>
                         <p class="Desc">Yuval Noah Harari</p>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <div class="Recomendacion">
-                    <img src="static/images/Libro3.png" alt="Libro3">
+                    <img src="static/images/principito.png" alt="Libro3">
                     <div class="Recomendacion_Info">
                         <p>El principito</p>
                         <p class="Desc">Antoine de Saint-Exupéry</p>
@@ -107,10 +107,7 @@
         </div>
     </main>
     <footer>
-
     </footer>
-
     <script src="static/js/script.js"></script>
 </body>
-
 </html>

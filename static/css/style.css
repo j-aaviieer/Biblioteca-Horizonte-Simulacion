@@ -38,24 +38,19 @@ nav {
     color: rgb(36, 93, 163);
 }
 
-.Nav_Text{
-    display:flex;
-    flex-direction: column;
-}
-
-.Nav_Extras {
+.nav-interactions {
     display: flex;
     gap: 50px;
     padding: 20px;
 }
 
-.Nav_Form {
+.nav-email {
     display: flex;
     height:40px;
     gap:5px;
 }
 
-.Nav_Form button {
+.nav-email button {
     background-color: rgb(40, 94, 165);
     border: none;
     color: white;
@@ -63,37 +58,37 @@ nav {
     border-radius:5px;
 }
 
-.Nav_Libros {
+.nav-books {
     display: flex;
     gap: 5px;
     align-items: center;
 }
 
-.Nav_Libros img{
+.nav-books img{
     width:40px;
     height:40px;
 }
 
-.Nav_Libros_Text{
+.books-count{
     display:flex;
     flex-direction: row;
     align-items:center;
 }
-.Nav_Libros_Text h1{
+.books-count h1{
     font-size:18px;
 }
-.Nav_Libros_Text p{
+.books-count p{
     font-size:18px;
     padding-top:20px;
 }
-.Main {
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.Categorias {
+.categories-container {
     background-color: rgb(209, 220, 232);
     display: flex;
     width: 85%;
@@ -104,22 +99,25 @@ nav {
     flex-wrap: wrap;
 }
 
-.Categoria {
+.categoria {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    font-size: 12px;
-    gap: 25px;
-    width:140px;
-    margin-bottom:5px;
+    width: 150px;
+    height: 100px;
     flex-wrap: wrap;
     background-color:rgb(255, 255, 255);
 }
 
-.Categoria img {
-    width: 60px;
-    height: 48px;
-    margin-top:20px;
+.categoria img {
+    width: 30px;
+}
+
+.categoria p {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.808);
 }
 
 .Seccion2 {
